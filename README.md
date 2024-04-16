@@ -73,3 +73,10 @@
    Normalization   -평균과 분산으로 정규화하여 학습을 안정화하고 더 빠르게 수렴함. <br/>
    Dropout         -신경망의 과적합을 줄이기 위해 사용. 학습 중에 무작위로 선택된 뉴런의 일부를 제외하고 신경망의 연결을 끊는 것. 이를 통해 모델이 특정 뉴런에 과도하게 의존하는 것을 방지하고, 일반화 성능을 향상. <br/>
    이 외에도 많은 방법들이 있지만 Batch Normalization과 Dropout을 이용하여 코드를 개선. <br/>
+        <br/>
+  ![LeNet5_Upgrade](https://github.com/ChangsunLeee/HW2/assets/167077784/1830fe4d-ae9c-473b-bde9-6d54b5aa7f14)
+
+   평균 Train Loss     - 0.06967 <br/>
+   평균 Train Accuracy - 0.99025 <br/>
+   평균 Test Loss      - 0.04018 <br/>
+   평균 Test Accuracy  - 0.98802 <br/>
