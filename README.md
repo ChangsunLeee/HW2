@@ -76,7 +76,8 @@
         <br/>
   ![LeNet5_Upgrade](https://github.com/ChangsunLeee/HW2/assets/167077784/1830fe4d-ae9c-473b-bde9-6d54b5aa7f14)
 
-   평균 Train Loss     - 0.06967 <br/>
-   평균 Train Accuracy - 0.99025 <br/>
-   평균 Test Loss      - 0.04018 <br/>
-   평균 Test Accuracy  - 0.98802 <br/>
+   평균 Train Loss     - 0.0593(-0.01037) <br/>
+   평균 Train Accuracy - 0.9846(-0.00565) <br/>
+   평균 Test Loss      - 0.0389(-0.00128) <br/>
+   평균 Test Accuracy  - 0.9895(+0.00148) <br/>
+   정확도를 조금 잃어버리더라도 loss와의 간격을 줄이는게 중요하다고 하셨는데, 그 간격이 조금 줄어들었음. 오히려 test 데이터 정확도는 올라감. 하지만 적은 훈련수로 인해 조금은 랜덤하게 결과가 나오지 않을까 생각됨.
