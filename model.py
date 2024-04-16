@@ -38,14 +38,6 @@ class LeNet5(nn.Module):
         x = self.fc3(x)
         return x
 
-
-class CustomMLP(nn.Module):
-    """ Your custom MLP model
-
-        - Note that the number of model parameters should be about the same
-          with LeNet-5
-    """
-
 class CustomMLP(nn.Module):
     """ Your custom MLP model
 
@@ -55,15 +47,21 @@ class CustomMLP(nn.Module):
 
     def __init__(self, num_classes=10):
         super(CustomMLP, self).__init__()
-        self.fc1 = nn.Linear(16 * 4 * 4, 200)
+        self.fc1 = nn.Linear(784, 200)
         self.fc2 = nn.Linear(200, 100)
         self.fc3 = nn.Linear(100, 50)
         self.fc4 = nn.Linear(50, num_classes)
 
     def forward(self, img):
+        # 배치 크기를 고려하여 입력 데이터의 크기를 확인합니다.
+        batch_size = img.size(0)
         x = torch.flatten(img, 1)
         x = torch.relu(self.fc1(x))
         x = torch.relu(self.fc2(x))
         x = torch.relu(self.fc3(x))
         x = self.fc4(x)
-        return x
+        # 배치 크기를 고려하여 출력을 조정합니다.
+        return x.view(batch_size, -1)
+
+
+
