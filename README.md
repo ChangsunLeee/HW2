@@ -1,6 +1,7 @@
 24510056_기계설계로봇공학과_석사과정_이창선 <br/>
 파일구성 : dataset.py, model.py, main.py, main.py, LeNet5.png, CustomMLP.png <br/>
      (model.py와 model2.py의 차이점: model.py에서 LeNet-5의 기본 형식을 구현하려 했으며, model2.py에서 정규화기법을 사용하여 모델을 개선) <br/>
+     (model2.py의 경우 main.py의 7 line model -> model2로 변경한 뒤 선언하고 사용해야함.) <br/>
 실행프로그램 : Visual Studion Code <br/>
 <br/>
 <br/>
